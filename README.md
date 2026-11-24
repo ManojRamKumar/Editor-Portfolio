@@ -1,10 +1,3 @@
-# MRK Portfolio V2
-Extract the ZIP and open index.html to preview.
-## GitHub Pages
-Create a public repository. Upload all extracted files and the assets folder to its root. Settings > Pages > Deploy from a branch > main > / (root) > Save.
-## Covers
-Place JPG images in assets/images named work-01.jpg through work-08.jpg. Recommended 1080 x 1350, centered subject. Add profile.jpg for the portrait. Missing covers show colored placeholders.
-## Links and text
-Open index.html. Replace VIDEO_LINK_01 through VIDEO_LINK_08 with actual reel URLs. Edit titles, categories and descriptions in each article. Replace email, Instagram, LinkedIn and resume placeholders.
-## Navigation
-Click arrows, swipe/drag horizontally, or use keyboard left/right arrows. Click the active cover to open the video.
+# editedbyManoj V3
+Upload extracted files to repository root. Settings > Pages > main > / (root).
+Upload your portrait as assets/images/profile.jpg; it automatically replaces the illustration. Upload eight MP4 previews as assets/videos/work-01.mp4 through work-08.mp4 (H.264, 720x1280, 5–10 seconds). Actual clips are not included. Replace VIDEO_LINK_01 through VIDEO_LINK_08 and contact placeholders in index.html. Theme follows device settings automatically. No build tools needed.
