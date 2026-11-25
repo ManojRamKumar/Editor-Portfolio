@@ -934,3 +934,115 @@ a:focus-visible {
     scroll-behavior: auto;
   }
 }
+
+/* =================================
+   FIXED NAVBAR & RESUME BUTTON
+   ================================= */
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 76px;
+  z-index: 9999;
+  background: var(--bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--line);
+}
+
+/* Prevent content hiding behind navbar */
+
+body {
+  padding-top: 76px;
+}
+
+html {
+  scroll-padding-top: 90px;
+}
+
+/* Navigation alignment */
+
+.topbar nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+/* Highlighted resume button */
+
+.topbar nav a[href*="resume.pdf"],
+.topbar nav .nav-resume {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  background: #B7D15B !important;
+  color: #171714 !important;
+  padding: 12px 22px;
+  border: 1px solid #B7D15B;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* Resume button hover effect */
+
+.topbar nav a[href*="resume.pdf"]:hover,
+.topbar nav .nav-resume:hover {
+  background: var(--ink) !important;
+  color: var(--bg) !important;
+  border-color: var(--ink);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(183, 209, 91, 0.2);
+}
+
+/* Mobile responsiveness */
+
+@media (max-width: 800px) {
+
+  .topbar {
+    height: 65px;
+  }
+
+  body {
+    padding-top: 65px;
+  }
+
+  html {
+    scroll-padding-top: 80px;
+  }
+
+  .topbar nav {
+    gap: 12px;
+  }
+
+  .topbar nav a[href*="resume.pdf"],
+  .topbar nav .nav-resume {
+    padding: 9px 12px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 520px) {
+
+  .topbar nav {
+    gap: 10px;
+  }
+
+  .topbar nav a[href="#contact"],
+  .topbar nav a[href="#about"] {
+    display: none;
+  }
+
+  .topbar nav a[href*="resume.pdf"],
+  .topbar nav .nav-resume {
+    padding: 9px 11px;
+    font-size: 10px;
+  }
+}
